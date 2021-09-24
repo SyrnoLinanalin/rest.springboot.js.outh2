@@ -28,4 +28,9 @@ public class UserPageController {
         model.addAttribute("roles", user.getRoles());
         return "user";
     }
+
+    @GetMapping("/restricted")
+    public String restricted(){
+        return  "hi";
+    }
 }
